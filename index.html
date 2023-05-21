@@ -1,35 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+<html lang="en" style="font-size: 8px">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | Profile card component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							"dark-cyan": "#19a2ae",
+							"desaturated-blue": "#2d3248",
+							"gray-blue": "#6a6f81",
+							"dark-gray": "#969696",
+						},
+						fontFamily: {
+							"kumbh-sans": "Kumbh Sans",
+						},
+					},
+				},
+			}
+		</script>
+	</head>
+	<body
+		class="flex flex-col items-center justify-center mt-[18.4rem] text-[2.25rem] text-gray-blue bg-dark-cyan font-kumbh-sans"
+	>
+		<div
+			class="flex flex-col items-center bg-white w-[40.7rem] rounded-[2rem] overflow-hidden pb-[2.6rem] md:w-[43.75rem] z-10"
+		>
+			<img
+				src="images/image-victor.jpg"
+				alt="Victor"
+				class="absolute rounded-full left-1/2 transform -translate-x-1/2 mt-[11rem] transform border-[.75rem] border-white"
+			/>
+			<img src="images/bg-pattern-card.svg" alt="" class="h-[17.5rem]" />
+			<div class="flex justify-center mt-[9rem] gap-[1.5rem]">
+				<h1 class="font-[700] text-desaturated-blue text-[2.25rem]">
+					Victor Crest
+				</h1>
+				<span>26</span>
+			</div>
+			<span class="text-[1.8rem] mt-[.4rem]">London</span>
+			<hr class="w-full mt-[2.7rem]" />
+			<div class="flex gap-[3rem] mt-[2.8rem] md:gap-[4.5rem]">
+				<div class="flex flex-col items-center w-[8rem]">
+					<span
+						class="text-[2.25rem] font-[700] text-desaturated-blue"
+						>80K</span
+					>
+					<span class="text-[1.4rem]">Followers</span>
+				</div>
+				<div class="flex flex-col items-center w-[8rem]">
+					<span
+						class="text-[2.25rem] font-[700] text-desaturated-blue"
+						>803K</span
+					>
+					<span class="text-[1.4rem]">Likes</span>
+				</div>
+				<div class="flex flex-col items-center w-[8rem]">
+					<span
+						class="text-[2.25rem] font-[700] text-desaturated-blue"
+						>1.4K</span
+					>
+					<span class="text-[1.4rem]">Photos</span>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="mt-[2rem] text-white text-[1.5rem] opacity-75">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				class="underline"
+				>Frontend Mentor</a
+			>. Coded by
+			<a href="https://reshaditiya.com" target="_blank" class="underline"
+				>Resha Aditiya</a
+			>.
+		</div> -->
+	</body>
 </html>
